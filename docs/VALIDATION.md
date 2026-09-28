@@ -16,7 +16,7 @@ Godot --headless --path . --script res://tests/test_world_state.gd
 Godot --headless --path . --quit-after 30
 ```
 
-The wrapper uses timeouts and fails for nonzero exits or logged engine/script errors. Runtime checks cover mission ordering, idempotence, snapshot isolation, finite transforms, save replacement, round-trip equality, malformed saves, version/project mismatches and provenance consistency.
+The wrapper uses timeouts and fails for nonzero exits or logged engine/script errors. Runtime checks cover mission ordering, idempotence, snapshot isolation, finite transforms, save replacement, round-trip equality, malformed saves, version/project mismatches and provenance consistency. The expanded suite also exercises all five mission stages with fractional positions, heading and elapsed time. Discrete values compare exactly; fractional JSON round-trips allow only `1e-14 * max(1, abs(value))` numerical roundoff. This is not a claim of bitwise JSON/physics replay. The tests reject larger numeric changes and altered mission stages.
 
 The GitHub Actions workflow repeats these checks with Godot 4.5.1, downloaded from the official build release and checked against that release's published SHA-512 sums. Checkout is pinned; workflow permissions are read-only. Validation is not a deployment or game release.
 

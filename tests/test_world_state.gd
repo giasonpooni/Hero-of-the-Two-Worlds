@@ -10,6 +10,30 @@ func check(condition: bool, message: String) -> void:
 		failures += 1
 		push_error(message)
 
+func same_json_value(left: Variant, right: Variant) -> bool:
+	# JSON numeric parsing can differ by roundoff, not by meaningful game state.
+	if (left is int or left is float) and (right is int or right is float):
+		if left is int and right is int:
+			return left == right
+		return absf(float(left) - float(right)) <= 1e-14 * maxf(1.0, maxf(absf(left), absf(right)))
+	if typeof(left) != typeof(right):
+		return false
+	if left is Dictionary:
+		if left.size() != right.size():
+			return false
+		for key in left:
+			if not right.has(key) or not same_json_value(left[key], right[key]):
+				return false
+		return true
+	if left is Array:
+		if left.size() != right.size():
+			return false
+		for index in range(left.size()):
+			if not same_json_value(left[index], right[index]):
+				return false
+		return true
+	return left == right
+
 func _init() -> void:
 	var state = WorldState.new()
 	check(state.stage() == "available", "Seed stage")
@@ -80,7 +104,15 @@ func _init() -> void:
 		check(progression.save_file(path) == OK, "Save stage %d" % index)
 		var reloaded = WorldState.new()
 		check(reloaded.load_file(path), "Load stage %d" % index)
-		check(reloaded.snapshot() == progression.snapshot(), "Exact stage %d roundtrip" % index)
+		var received: Dictionary = reloaded.snapshot()
+		var sent: Dictionary = progression.snapshot()
+		if received != sent:
+			for key in sent:
+				if received[key] != sent[key]:
+					print("JSON roundtrip stage %d, field %s: %s -> %s" % [index, key, JSON.stringify(sent[key], "", true, true), JSON.stringify(received[key], "", true, true)])
+		check(same_json_value(received, sent), "Value-preserving stage %d roundtrip" % index)
+	check(not same_json_value(0.016, 0.016000001), "Roundtrip tolerance must reject meaningful clock changes")
+	check(not same_json_value({"mission": "collected"}, {"mission": "delivered"}), "Roundtrip comparison keeps discrete state exact")
 	DirAccess.remove_absolute(path)
 	print("HOTW runtime: %d checks, %d failures" % [checks, failures])
 	quit(1 if failures else 0)
