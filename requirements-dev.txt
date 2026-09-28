@@ -1,0 +1,2 @@
+# Used only by content validation, not by the playable Godot project.
+jsonschema==4.23.0

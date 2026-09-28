@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://game/scripts/harbour.gd" id="1"]
+[ext_resource type="PackedScene" path="res://game/scenes/player.tscn" id="2"]
+
+[node name="NizzaHarbour" type="Node3D"]
+script = ExtResource("1")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+rotation = Vector3(-0.9, -0.4, 0)
+light_energy = 1.0
+shadow_enabled = true
+
+[node name="Player" parent="." instance=ExtResource("2")]
+position = Vector3(0, 0.1, 6)

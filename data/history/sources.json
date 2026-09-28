@@ -1,0 +1,27 @@
+{
+  "schema_version": "source-register.v1",
+  "sources": [
+    {
+      "id": "treccani-garibaldi-1999",
+      "title": "GARIBALDI, Giuseppe",
+      "author": "Giuseppe Monsagrati",
+      "publisher": "Dizionario Biografico degli Italiani, volume 52 / Treccani",
+      "year": 1999,
+      "url": "https://www.treccani.it/enciclopedia/giuseppe-garibaldi_(Dizionario-Biografico)/",
+      "source_type": "scholarly_secondary",
+      "use": "Broad biographical chronology; maritime opening; leads for further research.",
+      "limitations": "Not a primary record of the fictional prototype errand. Precise historical missions require claim-level sources and cross-checking."
+    },
+    {
+      "id": "brown-garibaldi-archive",
+      "title": "The Garibaldi & the Risorgimento Archive",
+      "author": "Brown University Library",
+      "publisher": "Brown University, Center for Digital Scholarship",
+      "year": 2013,
+      "url": "https://library.brown.edu/cds/garibaldi/",
+      "source_type": "curated_archive",
+      "use": "Research discovery and study of the contemporary construction of Garibaldi's public image.",
+      "limitations": "A panorama or memoir is a situated representation, not an omniscient account. No archive images are bundled."
+    }
+  ]
+}

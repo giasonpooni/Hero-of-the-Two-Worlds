@@ -1,0 +1,22 @@
+; Hero of the Two Worlds — standalone Godot project.
+; The root is the resource root so data/ is available in editor and exports.
+config_version=5
+
+[application]
+config/name="Hero of the Two Worlds"
+config/version="0.1.0-scaffold"
+run/main_scene="res://game/scenes/harbour.tscn"
+config/features=PackedStringArray("4.5", "GL Compatibility")
+config/description="A historical biographical sandbox: the Garibaldi project."
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.45, 0.60, 0.70, 1)
