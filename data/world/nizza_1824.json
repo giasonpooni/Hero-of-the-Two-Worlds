@@ -1,0 +1,17 @@
+{
+  "schema_version": "world-state.v1",
+  "project_id": "hero-of-the-two-worlds",
+  "scenario_id": "nizza_harbour_1824",
+  "timeline_mode": "biographical",
+  "year": 1824,
+  "elapsed_seconds": 0.0,
+  "player": {"person_id": "giuseppe_garibaldi", "position": [0.0, 0.1, 6.0], "heading_radians": 0.0},
+  "mission": {"id": "harbour_errand", "stage": "available", "has_manifest": false},
+  "relationships": {"dock_contact": 0},
+  "journal": [],
+  "provenance": {
+    "classification": "fictional_connective",
+    "source_ids": ["treccani-garibaldi-1999"],
+    "note": "1824 is a historical period anchor. The harbour layout, errand, NPCs, dialogue and starting transform are authored placeholders, not documented events."
+  }
+}

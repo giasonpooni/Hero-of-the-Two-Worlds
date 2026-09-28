@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Hero of the Two Worlds — world-state.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "project_id", "scenario_id", "timeline_mode", "year", "elapsed_seconds", "player", "mission", "relationships", "journal", "provenance"],
+  "properties": {
+    "schema_version": {"const": "world-state.v1"},
+    "project_id": {"const": "hero-of-the-two-worlds"},
+    "scenario_id": {"const": "nizza_harbour_1824"},
+    "timeline_mode": {"const": "biographical"},
+    "year": {"const": 1824},
+    "elapsed_seconds": {"type": "number", "minimum": 0, "maximum": 1000000000},
+    "player": {
+      "type": "object", "additionalProperties": false,
+      "required": ["person_id", "position", "heading_radians"],
+      "properties": {
+        "person_id": {"const": "giuseppe_garibaldi"},
+        "position": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number", "minimum": -1000000, "maximum": 1000000}},
+        "heading_radians": {"type": "number", "minimum": -1000000, "maximum": 1000000}
+      }
+    },
+    "mission": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "stage", "has_manifest"],
+      "properties": {
+        "id": {"const": "harbour_errand"},
+        "stage": {"enum": ["available", "accepted", "collected", "delivered", "complete"]},
+        "has_manifest": {"type": "boolean"}
+      },
+      "allOf": [{"if": {"properties": {"stage": {"const": "collected"}}}, "then": {"properties": {"has_manifest": {"const": true}}}, "else": {"properties": {"has_manifest": {"const": false}}}}]
+    },
+    "relationships": {"type": "object", "additionalProperties": false, "required": ["dock_contact"], "properties": {"dock_contact": {"type": "integer", "minimum": 0, "maximum": 1}}},
+    "journal": {"type": "array", "maxItems": 4, "uniqueItems": true, "items": {"enum": ["accepted_errand", "collected_manifest", "delivered_manifest", "returned_to_contact"]}},
+    "provenance": {"const": {"classification": "fictional_connective", "source_ids": ["treccani-garibaldi-1999"], "note": "1824 is a historical period anchor. The harbour layout, errand, NPCs, dialogue and starting transform are authored placeholders, not documented events."}}
+  },
+  "allOf": [
+    {"if": {"properties": {"mission": {"properties": {"stage": {"const": "available"}}}}}, "then": {"properties": {"journal": {"const": []}, "relationships": {"properties": {"dock_contact": {"const": 0}}}}}},
+    {"if": {"properties": {"mission": {"properties": {"stage": {"const": "accepted"}}}}}, "then": {"properties": {"journal": {"const": ["accepted_errand"]}, "relationships": {"properties": {"dock_contact": {"const": 0}}}}}},
+    {"if": {"properties": {"mission": {"properties": {"stage": {"const": "collected"}}}}}, "then": {"properties": {"journal": {"const": ["accepted_errand", "collected_manifest"]}, "relationships": {"properties": {"dock_contact": {"const": 0}}}}}},
+    {"if": {"properties": {"mission": {"properties": {"stage": {"const": "delivered"}}}}}, "then": {"properties": {"journal": {"const": ["accepted_errand", "collected_manifest", "delivered_manifest"]}, "relationships": {"properties": {"dock_contact": {"const": 0}}}}}},
+    {"if": {"properties": {"mission": {"properties": {"stage": {"const": "complete"}}}}}, "then": {"properties": {"journal": {"const": ["accepted_errand", "collected_manifest", "delivered_manifest", "returned_to_contact"]}, "relationships": {"properties": {"dock_contact": {"const": 1}}}}}}
+  ]
+}

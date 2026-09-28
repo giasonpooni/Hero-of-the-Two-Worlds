@@ -1,0 +1,15 @@
+.godot/
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+build/
+dist/
+reports/
+*.tmp
+*.blend1
+*.blend2
+.DS_Store
+Thumbs.db
+.env
+.env.*
