@@ -85,6 +85,9 @@ func load_text(text: String) -> bool:
 		last_error = "Unsupported or inconsistent world-state.v1 for this scenario."
 		return false
 	_state = parser.data.duplicate(true)
+	# JSON has one numeric type; restore this contract's integer fields explicitly.
+	_state["year"] = int(_state["year"])
+	_state["relationships"]["dock_contact"] = int(_state["relationships"]["dock_contact"])
 	return true
 
 func load_file(path: String) -> bool:
@@ -102,7 +105,8 @@ func save_file(path: String) -> Error:
 	var file := FileAccess.open(temporary, FileAccess.WRITE)
 	if file == null:
 		return FileAccess.get_open_error()
-	file.store_string(JSON.stringify(_state, "\t"))
+	# Retain full floating-point precision across disk round-trips.
+	file.store_string(JSON.stringify(_state, "\t", true, true))
 	file.flush()
 	var result := file.get_error()
 	file.close()

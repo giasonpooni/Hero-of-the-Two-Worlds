@@ -49,7 +49,11 @@ func _init() -> void:
 	check(state.save_file(path) == OK, "Replace existing save")
 	var restored = WorldState.new()
 	check(restored.load_file(path), "Reload save")
-	check(restored.snapshot() == state.snapshot(), "Full save roundtrip")
+	var actual: Dictionary = restored.snapshot()
+	var expected: Dictionary = state.snapshot()
+	for key in expected:
+		check(actual[key] == expected[key], "Roundtrip field: " + str(key))
+	check(actual == expected, "Full save roundtrip")
 	var before: Dictionary = restored.snapshot()
 	check(not restored.load_text("{broken"), "Corrupt JSON rejected")
 	check(restored.snapshot() == before, "Corrupt save does not mutate active session")
@@ -65,6 +69,18 @@ func _init() -> void:
 	inconsistent["provenance"]["classification"] = "documented_history"
 	check(not restored.load_text(JSON.stringify(inconsistent)), "Fiction cannot be loaded as documented history")
 	check(not restored.load_text("x".repeat(1048577)), "Oversized saves rejected")
+	# Exercise fractional clocks/transforms and every mission stage, not only completion.
+	var progression = WorldState.new()
+	var actions := ["dock_contact", "storehouse", "captain", "dock_contact"]
+	for index in range(5):
+		if index > 0:
+			progression.interact(actions[index - 1])
+		progression.advance(1.0 / 60.0)
+		progression.set_player_transform(Vector3(0.1, 0.2, -0.3), 0.123456789012345)
+		check(progression.save_file(path) == OK, "Save stage %d" % index)
+		var reloaded = WorldState.new()
+		check(reloaded.load_file(path), "Load stage %d" % index)
+		check(reloaded.snapshot() == progression.snapshot(), "Exact stage %d roundtrip" % index)
 	DirAccess.remove_absolute(path)
 	print("HOTW runtime: %d checks, %d failures" % [checks, failures])
 	quit(1 if failures else 0)
