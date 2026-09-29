@@ -10,13 +10,23 @@ This is a sister project to **1792**, the Ranjit Singh / Buddh Singh biopic. It 
 
 ## Notation Systems and Cartesian Graphics
 
-**Notation Systems is the parent organization of Cartesian Graphics.** Notation Systems focuses on industrial tooling, computational instrumentation and scientific computing. **Cartesian Graphics** is its games, graphics and simulation studio/label, developing historically grounded biographical worlds and the technology needed to support them.
+**Notation Systems is the parent organization of Cartesian Graphics.** Notation Systems develops evidence-backed industrial intelligence, computational instrumentation and tooling that connect domain expertise to bounded, inspectable work. **Cartesian Graphics** is its games, graphics, physics and simulation studio/label, developing historically grounded biographical worlds and the technology needed to support them. This is an organizational description, not a separate incorporation claim.
+
+The firm's industrial domains remain **PAYLOAD** (physical operations, facilities, materials and logistics, including Caravan), **LANDSHARK** (land/site and spatial constraints), and **TRADEWIND** (contracts, prices and exposure). PayloadOS/ESM govern industrial evidence and state; Dossier Services packages scoped service outputs. A game does not become another industrial domain or inherit those authorities.
 
 Physics engines, coupled physical and multi-agent dynamics, graphics and multirate simulation are development interests motivated by these layered worlds. They are not claims that a general-purpose multiphysics engine or the planned game systems already exist.
 
-**Hero of the Two Worlds is a secondary project, developed gradually alongside 1792 as the studio's primary game.** Reusable production tooling belongs on the existing [Notations Engineering Terminal (NET)](https://github.com/giasonpooni/Notations-Engineering-Terminal) and in independently scoped specialist repositories, not a replacement workbench inside this game.
+**Hero of the Two Worlds is a secondary project, developed gradually alongside 1792 as the studio's primary game.** Reusable production tooling belongs on the existing [Notations Systems Terminal (NET)](https://github.com/giasonpooni/Notations-Systems-Terminal) and in independently scoped specialist repositories, not a replacement workbench inside this game. Existing NET / `net` / `ciw` identities remain intact.
 
 **Shared primitives; separate state authority.** Godot retains this game's live state and clock; creative direction and release approval remain game-owned. Industrial evidence, admission and release are not granted to a game or simulation through shared tooling. The parent/studio relationship does not change existing licences, attribution, third-party rights or the implementation limits below.
+
+### Expertise amplification and later transfer
+
+The intended workflow is **expert account and sources → reviewed episode specification → typed work orders → candidate content → execution observations and checks → editorial approval and playable integration**. Retain oral traditions, conflicting accounts, reconstruction and original fiction as distinct authoring inputs rather than converting every statement into a canonical fact.
+
+This title is a later transfer test for the **Notations Game Foundry workload on NET**, not a second Foundry implementation. A shared contract may coordinate research, geography, assets and mechanics while this game keeps its own schemas and acceptance criteria. Fewer repeated edits and more accepted work per expert decision are objectives to measure alongside total human effort, cost, rework and play quality—not demonstrated gains in this scaffold.
+
+General story capture, dependency-aware rebuilding, agent workers and secured execution containers remain development targets unless separately implemented and qualified. Logical workload boundaries and MCP interfaces are not OS security sandboxes. Cross-domain reuse in manufacturing, robotics, materials, GIS/remote sensing, DSP or analytics concerns operational contracts, not shared truth or automatic physical validation. None of this moves Garibaldi ahead of 1792's main narrative.
 
 ## What is here now?
 
@@ -97,7 +107,7 @@ Godot — playable application and current world-state owner
 
 **Godot owns gameplay now.** The state model is separate from the 3D scene so its transitions can be tested headlessly. There is no second simulation authority and no dependency on another personal repository.
 
-**Blender is the planned asset-authoring path.** Bevy and Notations Engineering Terminal are future integration points, not installed dependencies. Julia or C++ kernels should only be introduced for a measured workload; they are not required to make this harbour run.
+**Blender is the planned asset-authoring path.** Bevy and Notations Systems Terminal are future integration points, not installed dependencies. Julia or C++ kernels should only be introduced for a measured workload; they are not required to make this harbour run. The shared C++–Rust–Python–Julia direction uses optional, explicit interfaces, not automatic translation or four mandatory runtimes.
 
 The contract uses `world-state.v1` plus an explicit `project_id`. Sharing a version label with 1792 does **not** make the schemas interchangeable. [Architecture and boundaries](docs/ARCHITECTURE.md)
 
@@ -141,4 +151,4 @@ Contributions and coding agents should follow [CONTRIBUTING.md](CONTRIBUTING.md)
 
 Separate **documented history**, **reasonable reconstruction**, **gameplay abstraction**, and **fictional connective material**. Never turn an unverified anecdote or an invented interaction into a historical fact by putting it in JSON.
 
-This scaffolding change does not select or alter project licensing. Consult the repository-level licensing documents for applicable terms. No source code or artwork from 1792, commercial games, or historical archives has been copied into it. Engine and future third-party asset terms remain separate. [Rights and asset policy](docs/RIGHTS.md)
+This documentation update does not select or alter project licensing. Consult the repository-level licensing documents for applicable terms. No source code or artwork from 1792, commercial games, or historical archives has been copied into it. Engine and future third-party asset terms remain separate. [Rights and asset policy](docs/RIGHTS.md)
