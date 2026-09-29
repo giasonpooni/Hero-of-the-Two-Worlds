@@ -1,136 +1,46 @@
 # Hero of the Two Worlds
 
-**A historical biographical sandbox about Giuseppe Maria Garibaldi.**
+**Begin as a young sailor. Cross oceans, build trust and grow into command.**
 
-Begin as a young sailor. Cross oceans, live in exile, build trust, gather volunteers, and grow into command—without losing the ability to walk through the world as one person.
+A Cartesian Graphics historical biographical sandbox about Giuseppe Maria Garibaldi. This is a secondary project, developed gradually alongside **1792**, the primary game.
 
-This is a sister project to **1792**, the Ranjit Singh / Buddh Singh biopic. It shares the person-first, persistent-world design philosophy, not its setting, historical factions, source code, or a claim of save compatibility.
+**Current status: an early Godot harbour greybox with one fictional errand—not a finished open-world game.**
 
-> **Build one convincing harbour before building two continents.**
+[Run](#run-the-prototype) · [Full development reference](DEVELOPMENT_REFERENCE.md) · [Game design](docs/GAME_DESIGN.md) · [Historical method](docs/HISTORICAL_METHOD.md) · [Rights](docs/RIGHTS.md)
 
-## Notation Systems and Cartesian Graphics
+## Cartesian Graphics
 
-**Notation Systems is the parent organization of Cartesian Graphics.** Notation Systems develops evidence-backed industrial intelligence, computational instrumentation and tooling that connect domain expertise to bounded, inspectable work. **Cartesian Graphics** is its games, graphics, physics and simulation studio/label, developing historically grounded biographical worlds and the technology needed to support them. This is an organizational description, not a separate incorporation claim.
+**Interactive Worlds, Simulation Technology and Digital IP.** Cartesian Graphics develops games and the graphics, assets, simulation and production technology behind them. The game is a creative product in its own right, not merely a tooling benchmark.
 
-The firm's industrial domains remain **PAYLOAD** (physical operations, facilities, materials and logistics, including Caravan), **LANDSHARK** (land/site and spatial constraints), and **TRADEWIND** (contracts, prices and exposure). PayloadOS/ESM govern industrial evidence and state; Dossier Services packages scoped service outputs. A game does not become another industrial domain or inherit those authorities.
-
-Physics engines, coupled physical and multi-agent dynamics, graphics and multirate simulation are development interests motivated by these layered worlds. They are not claims that a general-purpose multiphysics engine or the planned game systems already exist.
-
-**Hero of the Two Worlds is a secondary project, developed gradually alongside 1792 as the studio's primary game.** Reusable production tooling belongs on the existing [Notations Systems Terminal (NET)](https://github.com/giasonpooni/Notations-Systems-Terminal) and in independently scoped specialist repositories, not a replacement workbench inside this game. Existing NET / `net` / `ciw` identities remain intact.
-
-**Shared primitives; separate state authority.** Godot retains this game's live state and clock; creative direction and release approval remain game-owned. Industrial evidence, admission and release are not granted to a game or simulation through shared tooling. The parent/studio relationship does not change existing licences, attribution, third-party rights or the implementation limits below.
-
-### Expertise amplification and later transfer
-
-The intended workflow is **expert account and sources → reviewed episode specification → typed work orders → candidate content → execution observations and checks → editorial approval and playable integration**. Retain oral traditions, conflicting accounts, reconstruction and original fiction as distinct authoring inputs rather than converting every statement into a canonical fact.
-
-This title is a later transfer test for the **Notations Game Foundry workload on NET**, not a second Foundry implementation. A shared contract may coordinate research, geography, assets and mechanics while this game keeps its own schemas and acceptance criteria. Fewer repeated edits and more accepted work per expert decision are objectives to measure alongside total human effort, cost, rework and play quality—not demonstrated gains in this scaffold.
-
-General story capture, dependency-aware rebuilding, agent workers and secured execution containers remain development targets unless separately implemented and qualified. Logical workload boundaries and MCP interfaces are not OS security sandboxes. Cross-domain reuse in manufacturing, robotics, materials, GIS/remote sensing, DSP or analytics concerns operational contracts, not shared truth or automatic physical validation. None of this moves Garibaldi ahead of 1792's main narrative.
-
-## What is here now?
-
-**An early Godot scaffold with a small third-person harbour greybox and one fictional errand.** This is not a finished open-world game or a full historical reconstruction.
-
-| Implemented in this scaffold | Planned, not implemented |
-| --- | --- |
-| Walking, running, mouse-look camera, collision | Sailing, riding, combat and stealth |
-| A primitive quay, storehouse and moored vessel | Historical cities, ships, terrain and character art |
-| Three labelled interaction points | Dialogue trees, companions and autonomous NPC schedules |
-| Accept → collect → deliver → return errand | Volunteer recruitment, faction politics and command |
-| Persistent mission progress, position, local trust and journal | Campaign transitions, ageing and injury systems |
-| Versioned save/load, JSON contracts and automated checks | Bevy, NET and other external integrations |
-
-The current scene is a **fictional Nice/Nizza harbour vignette set in 1824**. The year has a biographical basis in Garibaldi's early maritime career; the map, contacts, papers and dialogue are authored connective material, not a documented incident. See [Historical method](docs/HISTORICAL_METHOD.md) and the [source register](data/history/sources.json).
+**Notation Systems — Frontier Tooling and Instrumentation for Digital Futures.** Its instruments and [Notations Terminal](https://github.com/giasonpooni/Notations-Systems-Terminal) support shared development workflows. Public-interest tooling and private creative/IP work remain distinct. This wording establishes no new legal entity, nonprofit status, ownership transfer or licence grant.
 
 ## Run the prototype
 
-Use **Godot 4.5.1 Standard** as the pinned baseline. It is not a claim that this is the newest release. No .NET SDK, Blender installation, Python environment, account, or API key is needed to play this scaffold.
-
-Clone this repository, import the **root `project.godot`** in Godot, and press **F6** with the harbour scene open or **F5** to run the project. Alternatively, from the repository root:
+Import the root `project.godot` in **Godot 4.5.1 Standard** and press **F5**, or run:
 
 ```sh
 godot --path .
 ```
 
-`godot` means your installed executable. On Windows, use its actual path, for example in PowerShell:
+No account, API key, .NET SDK, Python environment or external Terminal is needed to play. Use the actual path to your installed Godot executable where required.
 
-```powershell
-& 'C:\Tools\Godot\Godot_v4.5.1-stable_win64.exe' --path .
-```
+**WASD** moves, **Shift** runs, **mouse** looks and **E** interacts. **Esc** releases the mouse; **left click** captures it. During play, **F5 saves** and **F9 loads**.
 
-### Controls and first errand
+Accept the dock errand, collect the manifest at the storehouse, deliver it to the captain and report back. The vessel is scenery; sailing and campaign transitions are not implemented. Save path: `user://harbour-save.v1.json`. The current harbour is authored connective material, not a documented historical incident.
 
-**WASD** moves, **Shift** runs, **mouse** looks, and **E** interacts when you are near a label. **Esc** releases the mouse; **left click** captures it again. While playing, **F5 saves** and **F9 loads**. Close the game window to quit.
+## Creative development and research
 
-Walk to the dock contact, collect the manifest at the storehouse, take it to the captain, and return to the contact. Completion adds one local trust point. Repeating the last interaction does not duplicate the reward.
+First make the harbour loop convincing. Later, the title can test whether production workflows developed around 1792 transfer to another game without replacing the workbench. Game Foundry belongs on NET; Godot keeps live game state, clock and saves, while creative direction and release approval stay game-owned.
 
-The save lives at `user://harbour-save.v1.json` in Godot's per-user application-data directory, not inside the checkout. Load failures keep the current session. The vessel is scenery: there is no boarding or sailing mechanic yet. The prototype clock measures session time; it is not a day/night or calendar simulation.
+Measure adaptation, setup, supervision, build cost, rework and accepted playable output. Preserve failed attempts and separate automated checks from artistic review and historical claims. No cross-title productivity multiplier, GPU speedup or autonomous production capability is established by this scaffold.
 
-## The game we are building toward
+Python, Julia, Rust and C++ are optional specialist implementation choices, not four mandatory live runtimes. CUDA requires a separately implemented and measured provider.
 
-```text
-sailor → exile → irregular commander → volunteer general → political symbol
-```
-
-The long-term design joins an embodied world with increasingly consequential command. Coastal travel, ports, countryside, camps, conversations, reconnaissance and small actions should remain meaningful after the player acquires an army.
-
-**Seamanship and mobility.** Routes, weather, vessels and the ability to get people and supplies somewhere matter as much as a coloured area on a map.
-
-**Volunteers rather than interchangeable units.** Recruitment, commitment, fatigue, trust, language and material support shape a force. Anita and other historical participants should have agency and their own evidence-backed records, not function as upgrade slots.
-
-**Command with incomplete information.** Reports travel through people. Orders take time. A successful subordinate mission changes the same campaign state as the main character's actions.
-
-**Political success is not personal sovereignty.** Military capability, popular support, republican commitments, state authority and foreign intervention are separate pressures. Later chapters should make room for compromise, retreat and the cost of victory—not only territorial accumulation.
-
-These are **design targets**, not claims about working systems. [Game design](docs/GAME_DESIGN.md) turns them into bounded development slices.
-
-## Two worlds, connected chapters
-
-The proposed campaign is recorded as data in [chapters.json](data/campaign/chapters.json): maritime beginnings, conspiracy and exile, South America, return and the Roman Republic, a second exile, the volunteer army, later campaigns, and Caprera.
-
-**Only the harbour greybox exists.** The chapter titles, year ranges and gameplay themes are planning choices grounded in a broad biography, not a researched mission script. Detailed chronology belongs in the research layer. [Campaign plan](docs/CAMPAIGN.md)
-
-The target is **connected regional sandboxes with explicit voyages and time jumps**, not one seamless map of Europe and South America. Persistent identity, relationships, consequences and provenance carry between regions; what is carried across a time jump must be explicitly defined.
-
-## Architecture
-
-```text
-Blender / authored content
-          │ reviewed, exported assets
-          ▼
-Godot — playable application and current world-state owner
-          │ versioned snapshots / commands (future adapters)
-          ├── Bevy / Rust: bounded large-scale simulation, when justified
-          └── NET / Python: external experiments, replay and validation
-```
-
-**Godot owns gameplay now.** The state model is separate from the 3D scene so its transitions can be tested headlessly. There is no second simulation authority and no dependency on another personal repository.
-
-**Blender is the planned asset-authoring path.** Bevy and Notations Systems Terminal are future integration points, not installed dependencies. Julia or C++ kernels should only be introduced for a measured workload; they are not required to make this harbour run. The shared C++–Rust–Python–Julia direction uses optional, explicit interfaces, not automatic translation or four mandatory runtimes.
-
-The contract uses `world-state.v1` plus an explicit `project_id`. Sharing a version label with 1792 does **not** make the schemas interchangeable. [Architecture and boundaries](docs/ARCHITECTURE.md)
-
-## Repository map
-
-```text
-project.godot             Import this file; repository root is res://
-game/scenes/             Player and harbour scenes
-game/scripts/            Controller, harbour presentation, persistent state
-data/world/              The shipped scenario seed
-data/campaign/           Planned chapter manifest
-data/history/            Sources and research limitations
-schemas/                 Versioned JSON contracts
-assets/                  Asset pipeline policy; no third-party art bundled
-tests/                   Python content tests and Godot runtime regressions
-tools/                   Content validator and headless check runner
-docs/                    Design, campaign, history, rights and milestones
-.github/workflows/       Automated validation
-```
+[Research protocol](https://github.com/giasonpooni/Notations-Systems-Terminal/blob/b41b84922d4963a9206202029afd1e78b9451f9c/RESEARCH_PROGRAMME.md) · [Organization profile](https://github.com/giasonpooni/Notations-Systems-Terminal/blob/b41b84922d4963a9206202029afd1e78b9451f9c/PUBLIC_POSITIONING.md)
 
 ## Check the scaffold
 
-Python **3.11+** is for developer validation only:
+Python 3.11+ is required only for developer validation:
 
 ```sh
 python -m pip install -r requirements-dev.txt
@@ -139,16 +49,10 @@ python -m unittest discover -s tests -p 'test_*.py' -v
 python tools/check_godot.py --godot godot
 ```
 
-The first two checks validate content and contracts; they do not execute GDScript. The final command imports the project, executes the Godot state tests, and smoke-runs the scene. It fails on engine errors even when Godot returns exit code zero. [Validation scope](docs/VALIDATION.md)
+[Validation scope](docs/VALIDATION.md) · [Roadmap](docs/ROADMAP.md) · [Architecture](docs/ARCHITECTURE.md)
 
-## Development order
+## Preserved documentation and rights
 
-Get the harbour loop working comfortably first. Then add one vessel interaction and one grounded social encounter. Only after that should the project grow into the first South American regional slice or larger command systems. [Roadmap and acceptance gates](docs/ROADMAP.md)
+The full previous README is preserved byte-for-byte in [DEVELOPMENT_REFERENCE.md](DEVELOPMENT_REFERENCE.md), using the original Git blob at the same root-relative base. It retains the complete controls, historical method, campaign targets, architecture, layout and rights discussion.
 
-Contributions and coding agents should follow [CONTRIBUTING.md](CONTRIBUTING.md) and [AGENTS.md](AGENTS.md). Do not substitute a large framework, generated content catalogue, or dependency stack for a tested piece of the game.
-
-## History, assets and rights
-
-Separate **documented history**, **reasonable reconstruction**, **gameplay abstraction**, and **fictional connective material**. Never turn an unverified anecdote or an invented interaction into a historical fact by putting it in JSON.
-
-This documentation update does not select or alter project licensing. Consult the repository-level licensing documents for applicable terms. No source code or artwork from 1792, commercial games, or historical archives has been copied into it. Engine and future third-party asset terms remain separate. [Rights and asset policy](docs/RIGHTS.md)
+This update changes no code, assets, tests, workflows, engine pins, licences or release status. Consult [RIGHTS.md](docs/RIGHTS.md) and the applicable repository and third-party terms. Separate documented history, reconstruction, gameplay abstraction and original fiction. No material from another game or archive is imported here.
