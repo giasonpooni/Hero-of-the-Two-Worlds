@@ -8,11 +8,13 @@ A Cartesian Graphics historical biographical sandbox about Giuseppe Maria Gariba
 
 [Run](#run-the-prototype) · [Full development reference](DEVELOPMENT_REFERENCE.md) · [Game design](docs/GAME_DESIGN.md) · [Historical method](docs/HISTORICAL_METHOD.md) · [Rights](docs/RIGHTS.md)
 
-## Cartesian Graphics
+## Cartesian Graphics and Notation Systems
 
-**Interactive Worlds, Simulation Technology and Digital IP.** Cartesian Graphics develops games and the graphics, assets, simulation and production technology behind them. The game is a creative product in its own right, not merely a tooling benchmark.
+**Cartesian Graphics — Private Creative, Simulation and Commercial IP Programme.** The game is a creative product in its own right.
 
-**Notation Systems — Frontier Tooling and Instrumentation for Digital Futures.** Its instruments and [Notations Terminal](https://github.com/giasonpooni/Notations-Systems-Terminal) support shared development workflows. Public-interest tooling and private creative/IP work remain distinct. This wording establishes no new legal entity, nonprofit status, ownership transfer or licence grant.
+The proposed institutional direction places Cartesian Graphics as the private ownership/commercialization layer above a **Notation Systems public-interest scientific instrumentation commons**. That is a governance direction, not a claim that a legal parent/subsidiary relationship, nonprofit entity or IP transfer already exists.
+
+[Notations Terminal](https://github.com/giasonpooni/Notations-Systems-Terminal) supplies shared scientific instrumentation. The game retains its own authored content, schemas, live state, clock, saves, historical interpretation and release approval.
 
 ## Run the prototype
 
@@ -22,7 +24,7 @@ Import the root `project.godot` in **Godot 4.5.1 Standard** and press **F5**, or
 godot --path .
 ```
 
-No account, API key, .NET SDK, Python environment or external Terminal is needed to play. Use the actual path to your installed Godot executable where required.
+No account, API key, .NET SDK, Python environment or external Terminal is needed to play.
 
 **WASD** moves, **Shift** runs, **mouse** looks and **E** interacts. **Esc** releases the mouse; **left click** captures it. During play, **F5 saves** and **F9 loads**.
 
@@ -30,13 +32,15 @@ Accept the dock errand, collect the manifest at the storehouse, deliver it to th
 
 ## Creative development and research
 
-First make the harbour loop convincing. Later, the title can test whether production workflows developed around 1792 transfer to another game without replacing the workbench. Game Foundry belongs on NET; Godot keeps live game state, clock and saves, while creative direction and release approval stay game-owned.
+First make the harbour loop convincing. Later, this title can test whether production workflows developed around 1792 transfer to another game without replacing the workbench.
 
-Measure adaptation, setup, supervision, build cost, rework and accepted playable output. Preserve failed attempts and separate automated checks from artistic review and historical claims. No cross-title productivity multiplier, GPU speedup or autonomous production capability is established by this scaffold.
+Games/simulation are valuable to the instrumentation commons because an engine can expose controlled synthetic ground truth, partial observations and exact state transitions. That permits bounded experiments in estimation, mapping, delayed information and agent reasoning. It does not establish simulation-to-reality validity.
 
-Python, Julia, Rust and C++ are optional specialist implementation choices, not four mandatory live runtimes. CUDA requires a separately implemented and measured provider.
+Game Foundry belongs on NET; Godot keeps live game state and saves, while creative direction and release approval stay game-owned. Measure adaptation, setup, supervision, build cost, rework and accepted playable output.
 
-[Research protocol](https://github.com/giasonpooni/Notations-Systems-Terminal/blob/b41b84922d4963a9206202029afd1e78b9451f9c/RESEARCH_PROGRAMME.md) · [Organization profile](https://github.com/giasonpooni/Notations-Systems-Terminal/blob/b41b84922d4963a9206202029afd1e78b9451f9c/PUBLIC_POSITIONING.md)
+Python, Julia, Rust and C++ are optional specialist implementation choices. CUDA requires a separately implemented and measured provider.
+
+[Research protocol](https://github.com/giasonpooni/Notations-Systems-Terminal/blob/docs/coupled-game-foundry-scope-20260929/RESEARCH_PROGRAMME.md).
 
 ## Check the scaffold
 
@@ -53,6 +57,6 @@ python tools/check_godot.py --godot godot
 
 ## Preserved documentation and rights
 
-The full previous README is preserved byte-for-byte in [DEVELOPMENT_REFERENCE.md](DEVELOPMENT_REFERENCE.md), using the original Git blob at the same root-relative base. It retains the complete controls, historical method, campaign targets, architecture, layout and rights discussion.
+The full previous README is preserved byte-for-byte in [DEVELOPMENT_REFERENCE.md](DEVELOPMENT_REFERENCE.md).
 
-This update changes no code, assets, tests, workflows, engine pins, licences or release status. Consult [RIGHTS.md](docs/RIGHTS.md) and the applicable repository and third-party terms. Separate documented history, reconstruction, gameplay abstraction and original fiction. No material from another game or archive is imported here.
+This update changes no code, assets, tests, workflows, engine pins, licences or release status. The proposed institutional inversion transfers no existing rights. Consult [RIGHTS.md](docs/RIGHTS.md) and applicable repository/third-party terms.
