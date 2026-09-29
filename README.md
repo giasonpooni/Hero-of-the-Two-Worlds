@@ -8,6 +8,16 @@ This is a sister project to **1792**, the Ranjit Singh / Buddh Singh biopic. It 
 
 > **Build one convincing harbour before building two continents.**
 
+## Notation Systems and Cartesian Graphics
+
+**Notation Systems is the parent organization of Cartesian Graphics.** Notation Systems focuses on industrial tooling, computational instrumentation and scientific computing. **Cartesian Graphics** is its games, graphics and simulation studio/label, developing historically grounded biographical worlds and the technology needed to support them.
+
+Physics engines, coupled physical and multi-agent dynamics, graphics and multirate simulation are development interests motivated by these layered worlds. They are not claims that a general-purpose multiphysics engine or the planned game systems already exist.
+
+**Hero of the Two Worlds is a secondary project, developed gradually alongside 1792 as the studio's primary game.** Reusable production tooling belongs on the existing [Notations Engineering Terminal (NET)](https://github.com/giasonpooni/Notations-Engineering-Terminal) and in independently scoped specialist repositories, not a replacement workbench inside this game.
+
+**Shared primitives; separate state authority.** Godot retains this game's live state and clock; creative direction and release approval remain game-owned. Industrial evidence, admission and release are not granted to a game or simulation through shared tooling. The parent/studio relationship does not change existing licences, attribution, third-party rights or the implementation limits below.
+
 ## What is here now?
 
 **An early Godot scaffold with a small third-person harbour greybox and one fictional errand.** This is not a finished open-world game or a full historical reconstruction.
