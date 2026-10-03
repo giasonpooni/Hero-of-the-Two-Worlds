@@ -8,6 +8,18 @@ This is a sister project to **1792**, the Ranjit Singh / Buddh Singh biopic. It 
 
 > **Build one convincing harbour before building two continents.**
 
+## Organization
+
+**Notation Systems Inc.** is the parent organization. Its divisions are:
+
+- **Notations Gaming** — games and interactive worlds.
+- **Notations Manufacturing** — industrial design, materials and manufacturing systems.
+- **Notations Laboratories** — research, scientific computing, simulation and experimental validation.
+
+This game is developed by **Notations Gaming**, replacing Cartesian Graphics as
+its current development name. Existing copyright credits, licensing records and
+source attribution retain their recorded identities.
+
 ## What is here now?
 
 **An early Godot scaffold with a small third-person harbour greybox and one fictional errand.** This is not a finished open-world game or a full historical reconstruction.
@@ -131,7 +143,7 @@ Contributions and coding agents should follow [CONTRIBUTING.md](CONTRIBUTING.md)
 
 Separate **documented history**, **reasonable reconstruction**, **gameplay abstraction**, and **fictional connective material**. Never turn an unverified anecdote or an invented interaction into a historical fact by putting it in JSON.
 
-Original project material owned by **Notation Systems Inc.** is subject to the permission-only rights reservation in [LICENSE](LICENSE). **Cartesian Graphics Ltd.** and **Giason Pooni Studios** are issuing names/labels; their names do not establish additional ownership. Uses requiring the owner's permission need prior outreach and an express written authorization signed by an authorized representative. Submit a [licensing request](https://github.com/giasonpooni/A-Man-of-Two-Worlds/issues/new?template=licensing-request.yml); a request is not a grant.
+Original project material owned by **Notation Systems Inc.** is subject to the permission-only rights reservation in [LICENSE](LICENSE). The existing rights notice records **Cartesian Graphics Ltd.** and **Giason Pooni Studios** as earlier issuing names/labels; those names do not establish additional ownership. Uses requiring the owner's permission need prior outreach and an express written authorization signed by an authorized representative. Submit a [licensing request](https://github.com/giasonpooni/A-Man-of-Two-Worlds/issues/new?template=licensing-request.yml); a request is not a grant.
 
 The project owner has declared the assets original and the corpus reference-only. [Owner declaration](docs/OWNERSHIP_DECLARATION.md) records that statement; [baseline audit](docs/LICENSING_AUDIT.md) identifies the inspected files and limits. Historical facts, public-domain works, reference sources, prior valid licences, mandatory legal rights and hosting-platform permissions remain separate.
 
