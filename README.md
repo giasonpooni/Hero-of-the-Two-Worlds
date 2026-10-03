@@ -10,15 +10,38 @@ This is a sister project to **1792**, the Ranjit Singh / Buddh Singh biopic. It 
 
 ## Organization
 
-**Notation Systems Inc.** is the parent organization. The current child-company names in the owner-declared group hierarchy are:
+**Notation Systems Inc.** is the parent organization: a scientific computing and
+systems engineering company developing computational instruments, software and
+interactive environments for understanding and building physical and virtual
+systems. Its development direction connects measurement, state estimation and
+sensor fusion, scientific modelling, simulation and execution, from materials
+and machines to interactive worlds.
 
-- **Notations Gaming** — games and interactive worlds.
-- **Notation Manufacturing** — industrial design, materials and manufacturing systems.
-- **Notations Laboratories** — research, scientific computing, simulation and experimental validation.
+The parent organization's activities span:
 
-This game is developed by **Notations Gaming**, replacing Cartesian Graphics as
-its current development name. Existing copyright credits, licensing records and
-source attribution retain their recorded identities.
+| Activity | Focus |
+| --- | --- |
+| **Notations Gaming** | Games, graphics, world building, interactive environments and gameplay simulation. |
+| **Notations Manufacturing** | Design, machinery integration, process development, fabrication and production systems. |
+| **Notations Laboratories** | Research and experimental validation in scientific computing, measurement, physics and chemistry modelling, materials and simulation. |
+
+**Hero of the Two Worlds is a distinct Notations Gaming biographical project,**
+with maritime movement, volunteers and situated command as its design direction.
+The current scaffold is a fictional 1824 Nice/Nizza harbour errand with movement,
+proximity interactions and saved mission state. Sailing, wider command systems
+and external simulation providers remain planned. Interaction, visual quality
+and play guide the expansion into historical regional worlds.
+
+Godot owns this title's game state. Future shared providers must retain its
+state and clock boundaries and the separate identities of evidence, operations,
+executions and verification. Gameplay results are not scientific evidence;
+scientific or industrial reuse needs its own calibration, uncertainty,
+repeatability, validation and operating envelope. A simulation result alone
+does not authorize machinery control.
+
+Notations Gaming replaces Cartesian Graphics as the current game development
+name. Existing copyright credits, licensing records and source attribution
+retain their recorded identities.
 
 The [ownership declaration](docs/OWNERSHIP_DECLARATION.md) records this group hierarchy separately from rights ownership. A signed licence must identify the legal licensor with the relevant rights and an authorized signer.
 
