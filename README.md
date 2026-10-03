@@ -1,5 +1,26 @@
 # Hero of the Two Worlds
 
+## Current production priority and historical style
+
+**Slow secondary development.** 1792 remains the primary game workload;
+Garibaldi is the secondary title and a test of shared production-workflow reuse.
+Geronimo is on hold. Existing harbour work is preserved, not restarted.
+
+Garibaldi is an **entry point into connected lives**, not the boundary of the
+historical world. Discover other people through encounters, relationships,
+correspondence, obligations and consequences. Preserve what each actor could
+know at the moment of choice rather than granting them retrospective hindsight.
+Plausible private beliefs and motives remain reconstructions, not historical facts.
+
+[Connected lives, perspective boundaries and the first transfer contract](docs/HISTORICAL_PERSPECTIVE.md).
+The shared authoring tool is available in
+[Terminal PR #70](https://github.com/giasonpooni/Notations-Systems-Terminal/pull/70)
+as `net history`. **It is not yet attached to this game's runtime.** It checks
+explicit annotations and received-information declarations, not the truth of
+historical psychology or the meaning of arbitrary dialogue.
+
+---
+
 **A historical biographical sandbox about Giuseppe Maria Garibaldi.**
 
 Begin as a young sailor. Cross oceans, live in exile, build trust, gather volunteers, and grow into command—without losing the ability to walk through the world as one person.
