@@ -39,8 +39,7 @@ scientific or industrial reuse needs its own calibration, uncertainty,
 repeatability, validation and operating envelope. A simulation result alone
 does not authorize machinery control.
 
-Notations Gaming replaces Cartesian Graphics as the current game development
-name. Existing copyright credits, licensing records and source attribution
+Existing copyright credits, licensing records and source attribution
 retain their recorded identities.
 
 The [ownership declaration](docs/OWNERSHIP_DECLARATION.md) records this group hierarchy separately from rights ownership. A signed licence must identify the legal licensor with the relevant rights and an authorized signer.
