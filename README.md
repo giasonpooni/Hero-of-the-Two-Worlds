@@ -17,12 +17,12 @@ systems. Its development direction connects measurement, state estimation and
 sensor fusion, scientific modelling, simulation and execution, from materials
 and machines to interactive worlds.
 
-The parent organization's activities span:
+The current child-company names in the owner-declared group hierarchy are:
 
-| Activity | Focus |
+| Child company | Focus |
 | --- | --- |
 | **Notations Gaming** | Games, graphics, world building, interactive environments and gameplay simulation. |
-| **Notations Manufacturing** | Design, machinery integration, process development, fabrication and production systems. |
+| **Notation Manufacturing** | Design, machinery integration, process development, fabrication and production systems. |
 | **Notations Laboratories** | Research and experimental validation in scientific computing, measurement, physics and chemistry modelling, materials and simulation. |
 
 **Hero of the Two Worlds is a distinct Notations Gaming biographical project,**
