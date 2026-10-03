@@ -25,4 +25,4 @@ These are owner-declared group identities. The listing does not independently ve
 
 The project expression and the reference corpus remain separate. Research sources, citations, historical facts, archive holdings, public-domain works and third-party material are not claimed as proprietary assets of Notation Systems Inc. An original arrangement or authored reconstruction does not transfer ownership of its sources.
 
-The operative reservation is [LICENSE](../LICENSE). The [rights policy](RIGHTS.md) describes intake and release boundaries; the [baseline audit](LICENSING_AUDIT.md) records what was actually inspected. A request submitted through the public [licensing form](https://github.com/giasonpooni/A-Man-of-Two-Worlds/issues/new?template=licensing-request.yml) is not an authorization.
+The operative reservation is [LICENSE](../LICENSE). The [rights policy](RIGHTS.md) describes intake and release boundaries; the [baseline audit](LICENSING_AUDIT.md) records what was actually inspected. A request submitted through the public [licensing form](https://github.com/atomtrapping/A-Man-of-Two-Worlds/issues/new?template=licensing-request.yml) is not an authorization.
