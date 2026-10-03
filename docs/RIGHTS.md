@@ -1,6 +1,8 @@
 # Rights and asset policy
 
-The original scaffold did not select or alter project licensing. This separate, explicitly requested licensing adoption identifies **Notation Systems Inc.** as the owner/licensor of original project material based on the [owner-supplied declaration](OWNERSHIP_DECLARATION.md). **Cartesian Graphics Ltd.** and **Giason Pooni Studios** are issuing names/labels, not automatically additional owners. [LICENSE](../LICENSE) is the applicable permission-only rights reservation for material actually owned by Notation Systems Inc.
+The current development division is **Notations Gaming**, under **Notation Systems Inc.**; see [Organization](../README.md#organization). Recorded licensing names and copyright identities retain their existing attribution.
+
+The original scaffold did not select or alter project licensing. This separate, explicitly requested licensing adoption identifies **Notation Systems Inc.** as the owner/licensor of original project material based on the [owner-supplied declaration](OWNERSHIP_DECLARATION.md). The existing rights notice records **Cartesian Graphics Ltd.** and **Giason Pooni Studios** as earlier issuing names/labels, not automatically additional owners. [LICENSE](../LICENSE) is the applicable permission-only rights reservation for material actually owned by Notation Systems Inc.
 
 Uses requiring permission need prior outreach and an express written grant signed by an authorized representative of the actual rights holder. Submit a [licensing request](https://github.com/giasonpooni/A-Man-of-Two-Worlds/issues/new?template=licensing-request.yml); a request, payment, attribution or public visibility does not create permission. Public-platform permissions, prior valid grants, mandatory exceptions and third-party terms remain effective. This notice does not create an executed licence, contract by browsing, automatic penalty, or worldwide legal certification.
 
