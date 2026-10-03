@@ -131,4 +131,8 @@ Contributions and coding agents should follow [CONTRIBUTING.md](CONTRIBUTING.md)
 
 Separate **documented history**, **reasonable reconstruction**, **gameplay abstraction**, and **fictional connective material**. Never turn an unverified anecdote or an invented interaction into a historical fact by putting it in JSON.
 
-This scaffolding change does not select or alter project licensing. Consult the repository-level licensing documents for applicable terms. No source code or artwork from 1792, commercial games, or historical archives has been copied into it. Engine and future third-party asset terms remain separate. [Rights and asset policy](docs/RIGHTS.md)
+Original project material owned by **Notation Systems Inc.** is subject to the permission-only rights reservation in [LICENSE](LICENSE). **Cartesian Graphics Ltd.** and **Giason Pooni Studios** are issuing names/labels; their names do not establish additional ownership. Uses requiring the owner's permission need prior outreach and an express written authorization signed by an authorized representative. Submit a [licensing request](https://github.com/giasonpooni/A-Man-of-Two-Worlds/issues/new?template=licensing-request.yml); a request is not a grant.
+
+The project owner has declared the assets original and the corpus reference-only. [Owner declaration](docs/OWNERSHIP_DECLARATION.md) records that statement; [baseline audit](docs/LICENSING_AUDIT.md) identifies the inspected files and limits. Historical facts, public-domain works, reference sources, prior valid licences, mandatory legal rights and hosting-platform permissions remain separate.
+
+No source code or artwork from 1792, commercial games, or historical archives has been copied into it. Engine and future third-party asset terms remain separate. [Rights and asset policy](docs/RIGHTS.md)

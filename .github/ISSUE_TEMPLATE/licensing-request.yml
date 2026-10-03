@@ -1,0 +1,57 @@
+name: Licensing request
+description: Request express written permission for original project material.
+title: "[Licensing request] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a public discussion form. Submitting a request does not grant permission, create a licence or guarantee approval.
+        Describe the proposed use without posting personal contact details, confidential assets, credentials or sensitive information.
+        Any authorization requires an express written grant signed by an authorized representative of the actual rights holder.
+        Notation Systems Inc. is the declared owner/licensor of original project assets; third-party sources and prior valid rights remain separate.
+  - type: input
+    id: licensee
+    attributes:
+      label: Organization or project identifier
+      description: Use a public business or project identifier; personal names or contact details are not required.
+    validations:
+      required: true
+  - type: textarea
+    id: material
+    attributes:
+      label: Exact material and version
+      description: Identify public repository paths, commit/version, or an asset identifier. Do not upload confidential files.
+    validations:
+      required: true
+  - type: textarea
+    id: use
+    attributes:
+      label: Requested acts and purpose
+      description: Explain copying, modification, distribution, deployment, output use and commercial or noncommercial purpose as applicable.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Users, deployment, territory and term
+      description: Describe the intended systems/users, countries or regions, duration and any requested sublicensing.
+    validations:
+      required: true
+  - type: dropdown
+    id: ai_tdm
+    attributes:
+      label: Does the request include AI, automated extraction or text and data mining?
+      description: These rights require separate express authorization where reservable; explain any requested scope above.
+      options:
+        - "No"
+        - "Yes"
+        - "Not sure"
+    validations:
+      required: true
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: Request acknowledgement
+      options:
+        - label: I understand that this public request is not a permission grant and will not include confidential assets or personal contact details.
+          required: true
