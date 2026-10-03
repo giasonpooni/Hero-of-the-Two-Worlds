@@ -10,15 +10,17 @@ This is a sister project to **1792**, the Ranjit Singh / Buddh Singh biopic. It 
 
 ## Organization
 
-**Notation Systems Inc.** is the parent organization. Its divisions are:
+**Notation Systems Inc.** is the parent organization. The current child-company names in the owner-declared group hierarchy are:
 
 - **Notations Gaming** — games and interactive worlds.
-- **Notations Manufacturing** — industrial design, materials and manufacturing systems.
+- **Notation Manufacturing** — industrial design, materials and manufacturing systems.
 - **Notations Laboratories** — research, scientific computing, simulation and experimental validation.
 
 This game is developed by **Notations Gaming**, replacing Cartesian Graphics as
 its current development name. Existing copyright credits, licensing records and
 source attribution retain their recorded identities.
+
+The [ownership declaration](docs/OWNERSHIP_DECLARATION.md) records this group hierarchy separately from rights ownership. A signed licence must identify the legal licensor with the relevant rights and an authorized signer.
 
 ## What is here now?
 
@@ -143,7 +145,7 @@ Contributions and coding agents should follow [CONTRIBUTING.md](CONTRIBUTING.md)
 
 Separate **documented history**, **reasonable reconstruction**, **gameplay abstraction**, and **fictional connective material**. Never turn an unverified anecdote or an invented interaction into a historical fact by putting it in JSON.
 
-Original project material owned by **Notation Systems Inc.** is subject to the permission-only rights reservation in [LICENSE](LICENSE). The existing rights notice records **Cartesian Graphics Ltd.** and **Giason Pooni Studios** as earlier issuing names/labels; those names do not establish additional ownership. Uses requiring the owner's permission need prior outreach and an express written authorization signed by an authorized representative. Submit a [licensing request](https://github.com/giasonpooni/A-Man-of-Two-Worlds/issues/new?template=licensing-request.yml); a request is not a grant.
+Original project material owned by **Notation Systems Inc.** is subject to the permission-only rights reservation in [LICENSE](LICENSE). The current group identities are **Notations Gaming**, **Notation Manufacturing** and **Notations Laboratories** under the parent. The notice also preserves **Cartesian Graphics Ltd.** and **Giason Pooni Studios** as earlier issuing names/labels; naming a group company or an earlier label does not establish additional ownership or signing authority. Uses requiring the owner's permission need prior outreach and an express written authorization identifying the legal licensor with the relevant rights and signed by an authorized representative. Submit a [licensing request](https://github.com/giasonpooni/A-Man-of-Two-Worlds/issues/new?template=licensing-request.yml); a request is not a grant.
 
 The project owner has declared the assets original and the corpus reference-only. [Owner declaration](docs/OWNERSHIP_DECLARATION.md) records that statement; [baseline audit](docs/LICENSING_AUDIT.md) identifies the inspected files and limits. Historical facts, public-domain works, reference sources, prior valid licences, mandatory legal rights and hosting-platform permissions remain separate.
 

@@ -7,8 +7,9 @@ body:
       value: |
         This is a public discussion form. Submitting a request does not grant permission, create a licence or guarantee approval.
         Describe the proposed use without posting personal contact details, confidential assets, credentials or sensitive information.
-        Any authorization requires an express written grant signed by an authorized representative of the actual rights holder.
+        Any authorization requires an express written grant identifying the legal licensor with the relevant rights and signed by its authorized representative.
         Notation Systems Inc. is the declared owner/licensor of original project assets; third-party sources and prior valid rights remain separate.
+        The current group names under the parent are Notations Gaming, Notation Manufacturing and Notations Laboratories. Group affiliation alone does not establish ownership or signing authority.
   - type: input
     id: licensee
     attributes:

@@ -44,3 +44,13 @@ The inspected repository is public. [GitHub's current terms](https://docs.github
 The owner's [declaration](OWNERSHIP_DECLARATION.md) establishes the instructed publishing identity for this task; it is not an assignment or independently verified title record. New incoming assets and contributions require creator/source/permission records before inclusion. Actual release packaging, signed licences, intended-market enforceability and any later third-party corpus distribution remain separate reviews.
 
 The adoption changes documentation and a public licensing-request form. Runtime, schemas, scenario data, source register and validation code are preserved from the baseline. Content tests check repository consistency; they do not certify ownership, historical authenticity or enforceability.
+
+## Company hierarchy update
+
+Recorded 3 October 2026, America/Toronto.
+
+This targeted update was prepared from current main commit `0f21a93f8062e1d103a004df0dcba292380e5b93`, tree `416c4e076a76d2763d41bbd37b74ab3b80ff2d76`. Its complete recursive tree contains 34 blobs. The original adoption baseline above remains a historical audit record.
+
+The owner-declared hierarchy now names **Notation Systems Inc.** as parent and **Notations Gaming**, **Notation Manufacturing** and **Notations Laboratories** as current child-company identities. The existing declaration of parent ownership and the reservation's covered-material scope remain intact. Earlier issuing names, historical copyright attribution, prior valid licences, platform permissions, third-party/reference boundaries and statutory rights remain preserved.
+
+The update does not independently verify incorporation or authorize a group company to license rights it does not hold. A signed grant must identify the actual legal licensor holding the relevant rights and its authorized signer. Runtime, schemas, scenario data, source register, validation code and licensing-request scope are unchanged.
